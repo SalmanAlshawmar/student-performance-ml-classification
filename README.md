@@ -76,13 +76,11 @@ The project includes comprehensive model evaluation with:
 
 ## Model Performance Results
 
-| Model | Configuration | Train Score | Validation Score | Test Score | Best Parameters |
-|-------|---------------|-------------|------------------|------------|-----------------|
-| **Decision Tree (Basic)** | Default parameters | 100.0% | - | 91.14% | - |
-| **Decision Tree (Tuned)** | GridSearchCV optimized | - | 93.67% | 94.94% | criterion='gini', max_depth=5, min_samples_leaf=20 |
-| **KNN (Tuned)** | GridSearchCV optimized | - | - | 81.01% | n_neighbors=21, p=1, weights='distance' |
-| **SVM (Basic)** | Default parameters | - | - | 89.87% | - |
-| **SVM (Tuned)** | GridSearchCV optimized | - | - | 92.41% | C=0.1, gamma='scale', kernel='linear' |
+| Model | Test Accuracy | Best Parameters |
+|-------|---------------|-----------------|
+| **Decision Tree** | 94.94% | criterion='gini', max_depth=5, min_samples_leaf=20 |
+| **Support Vector Machine** | 92.41% | C=0.1, gamma='scale', kernel='linear' |
+| **K-Nearest Neighbors** | 81.01% | n_neighbors=21, p=1, weights='distance' |
 
 ### Performance Summary
 
